@@ -1,0 +1,21 @@
+{
+  "how_to_use": [
+    "Comment utiliser:",
+    "Entrez la quantité de doploons que vous avez disponible",
+    "et le prix de chaque type de parchemin sur votre serveur",
+    "puis cliquez sur calculer!"
+  ],
+  "scrolls": [
+    "Type de parchemin",
+    "Force",
+    "Intelligence",
+    "Sagesse",
+    "Agilité",
+    "Chance",
+    "Vitalité"
+  ],
+  "sizes": ["Petit", "Moyen", "Grand", "Puissant"],
+  "results": ["Type:", "Quantité:", "Total:"],
+  "placeholders": ["Quantité", "Prix"],
+  "buttons": ["Calculer!", "Retour"]
+}

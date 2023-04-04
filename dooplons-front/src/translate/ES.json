@@ -1,0 +1,21 @@
+{
+  "how_to_use": [
+    "Cómo utilizar:",
+    "Ingrese la cantidad de doploons que tiene disponible",
+    "y el precio de cada tipo de pergamino en su servidor",
+    "luego haga clic en calcular!"
+  ],
+  "scrolls": [
+    "Tipo de pergamino",
+    "Fuerza",
+    "Inteligencia",
+    "Sabiduría",
+    "Agilidad",
+    "Suerte",
+    "Vitalidad"
+  ],
+  "sizes": ["Pequeño", "Mediano", "Grande", "Potent"],
+  "results": ["Tipo:", "Cantidad:", "Total:"],
+  "placeholders": ["Cantidad", "Precio"],
+  "buttons": ["Calcular!", "Volver"]
+}

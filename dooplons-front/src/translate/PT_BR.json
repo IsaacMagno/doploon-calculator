@@ -1,0 +1,21 @@
+{
+  "how_to_use": [
+    "Como utilizar:",
+    "Insira a quantidade de doploons que você tem disponivel",
+    "e o preço de cada tipo de pergaminho em seu servidor",
+    "depois clique em calcular!"
+  ],
+  "scrolls": [
+    "Tipo do pergaminho",
+    "Força",
+    "Inteligência",
+    "Sabedoria",
+    "Agilidade",
+    "Chance",
+    "Vitalidade"
+  ],
+  "sizes": ["Pequeno", "Médio", "Grande", "Poderoso"],
+  "results": ["Tipo:", "Quantidade:", "Total:"],
+  "placeholders": ["Quantidade", "Preço"],
+  "buttons": ["Calcular!", "Voltar"]
+}

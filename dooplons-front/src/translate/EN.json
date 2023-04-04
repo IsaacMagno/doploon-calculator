@@ -1,0 +1,21 @@
+{
+  "how_to_use": [
+    "How to use:",
+    "Enter the amount of doploons you have available",
+    "and the price of each type of scroll on your server",
+    "then click calculate!"
+  ],
+  "scrolls": [
+    "Scroll type",
+    "Strength",
+    "Intelligence",
+    "Wisdom",
+    "Agility",
+    "Chance",
+    "Vitality"
+  ],
+  "sizes": ["Small", "Medium", "Large", "Powerful"],
+  "results": ["Type:", "Quantity:", "Total:"],
+  "placeholders": ["Quantity", "Price"],
+  "buttons": ["Calculate!", "Back"]
+}

@@ -58,7 +58,6 @@ const Content = ({ buttons, placeholders, results, scrolls, sizes }) => {
     await result.forEach((data) => {
       if (data.total_price > 0) {
         const scrollSizeKey = Object.keys(data)[0];
-        console.log(scrollSizeKey);
         setScrollSize(scrollSizeKey);
         newCurrentScrolls.push(scrollSizeKey);
 

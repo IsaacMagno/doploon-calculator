@@ -17,5 +17,6 @@
   "sizes": ["Small", "Medium", "Large", "Powerful"],
   "results": ["Type:", "Quantity:", "Total:"],
   "placeholders": ["Quantity", "Price"],
-  "buttons": ["Calculate!", "Back"]
+  "buttons": ["Calculate!", "Back"],
+  "spinner": ["Calculating!"]
 }

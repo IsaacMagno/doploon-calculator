@@ -3,7 +3,14 @@ import { useLocation } from "react-router-dom";
 
 import FormDoploon from "./FormDoploon";
 
-const Content = ({ buttons, placeholders, results, scrolls, sizes }) => {
+const Content = ({
+  buttons,
+  placeholders,
+  results,
+  scrolls,
+  sizes,
+  spinner,
+}) => {
   const [showResult, setShowResult] = useState(false);
   const [resultData, setResultData] = useState([]);
   const [totalValue, setTotalValue] = useState();
@@ -90,6 +97,7 @@ const Content = ({ buttons, placeholders, results, scrolls, sizes }) => {
             placeholders={placeholders}
             sizes={sizes}
             buttons={buttons[0]}
+            spinner={spinner}
           />
         ) : (
           <div className=''>

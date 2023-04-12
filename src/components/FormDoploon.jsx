@@ -8,6 +8,7 @@ const FormDoploon = ({
   placeholders,
   sizes,
   buttons,
+  spinner,
 }) => {
   const [doploons, setDoploons] = useState();
   const [small, setSmall] = useState();
@@ -171,7 +172,7 @@ const FormDoploon = ({
             className='mt-6 text-xl font-extrabold'
             style={{ color: "#322c22" }}
           >
-            Calculando!
+            {spinner[0]}
           </p>
         </div>
       )}

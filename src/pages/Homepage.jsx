@@ -4,7 +4,8 @@ import Content from "../components/Content";
 import Footer from "../components/Footer";
 
 const Homepage = ({ translateData, lang }) => {
-  const { buttons, placeholders, results, scrolls, sizes } = translateData;
+  const { buttons, placeholders, results, scrolls, sizes, spinner } =
+    translateData;
   const { how_to_use } = translateData;
 
   return (
@@ -21,6 +22,7 @@ const Homepage = ({ translateData, lang }) => {
         results={results}
         scrolls={scrolls}
         sizes={sizes}
+        spinner={spinner}
         lang={lang}
       />
       {/* Info */}

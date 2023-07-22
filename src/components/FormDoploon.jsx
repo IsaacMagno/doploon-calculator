@@ -35,11 +35,11 @@ const FormDoploon = ({
     setRequestSend(true);
 
     const result = await doploon_optimization({
-      "doploons": doploons,
-      "small": small,
-      "medium": medium,
-      "great": great,
-      "powerful": powerful,
+      doploons: doploons,
+      small: small,
+      medium: medium,
+      great: great,
+      powerful: powerful,
     });
 
     setDoploons("");
@@ -56,96 +56,96 @@ const FormDoploon = ({
   return (
     <>
       {!requestSend ? (
-        <form className='flex flex-col gap-1'>
-          <div className='flex justify-between items-center font-bold'>
-            <span className='font-extrabold text-xl opacity-60 2xl:text-3xl'>
+        <form className="flex flex-col gap-1">
+          <div className="flex justify-between items-center font-bold">
+            <span className="font-extrabold text-xl opacity-60 2xl:text-3xl">
               Doploons:
             </span>
             <input
-              type='number'
-              className='text-gray-700 font-bold  border-gray-300 rounded-md py-2 text-center sm:text-sm placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-500 focus:border-gray-500 bg-transparent 2xl:text-2xl'
+              type="number"
+              className="text-gray-700 font-bold  border-gray-300 rounded-md py-2 text-center sm:text-sm placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-500 focus:border-gray-500 bg-transparent 2xl:text-2xl"
               placeholder={placeholders[0]}
               value={doploons}
               onChange={({ target: { value } }) => setDoploons(value)}
             />
           </div>
-          <div className='flex justify-between items-center font-bold'>
-            <span className='font-extrabold text-xl opacity-60 2xl:text-3xl'>
+          <div className="flex justify-between items-center font-bold">
+            <span className="font-extrabold text-xl opacity-60 2xl:text-3xl">
               {sizes[0]}
             </span>
             <input
-              type='number'
-              className='text-gray-700 font-bold  border-gray-300 rounded-md py-2 text-center sm:text-sm placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-500 focus:border-gray-500 bg-transparent 2xl:text-2xl'
+              type="number"
+              className="text-gray-700 font-bold  border-gray-300 rounded-md py-2 text-center sm:text-sm placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-500 focus:border-gray-500 bg-transparent 2xl:text-2xl"
               placeholder={placeholders[1]}
               value={small}
               onChange={({ target: { value } }) => setSmall(value)}
             />
           </div>
-          <div className='flex justify-between items-center font-bold'>
-            <span className='font-extrabold text-xl opacity-60 2xl:text-3xl'>
+          <div className="flex justify-between items-center font-bold">
+            <span className="font-extrabold text-xl opacity-60 2xl:text-3xl">
               {sizes[1]}
             </span>
             <input
-              type='number'
-              className='text-gray-700 font-bold  border-gray-300 rounded-md py-2 text-center sm:text-sm placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-500 focus:border-gray-500 bg-transparent 2xl:text-2xl'
+              type="number"
+              className="text-gray-700 font-bold  border-gray-300 rounded-md py-2 text-center sm:text-sm placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-500 focus:border-gray-500 bg-transparent 2xl:text-2xl"
               placeholder={placeholders[1]}
               value={medium}
               onChange={({ target: { value } }) => setMedium(value)}
             />
           </div>
-          <div className='flex justify-between items-center font-bold'>
-            <span className='font-extrabold text-xl opacity-60 2xl:text-3xl'>
+          <div className="flex justify-between items-center font-bold">
+            <span className="font-extrabold text-xl opacity-60 2xl:text-3xl">
               {sizes[2]}
             </span>
             <input
-              type='number'
-              className='text-gray-700 font-bold  border-gray-300 rounded-md py-2 text-center sm:text-sm placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-500 focus:border-gray-500 bg-transparent 2xl:text-2xl'
+              type="number"
+              className="text-gray-700 font-bold  border-gray-300 rounded-md py-2 text-center sm:text-sm placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-500 focus:border-gray-500 bg-transparent 2xl:text-2xl"
               placeholder={placeholders[1]}
               value={great}
               onChange={({ target: { value } }) => setGreat(value)}
             />
           </div>
-          <div className='flex justify-between items-center font-bold'>
-            <span className='font-extrabold text-xl opacity-60 2xl:text-3xl'>
+          <div className="flex justify-between items-center font-bold">
+            <span className="font-extrabold text-xl opacity-60 2xl:text-3xl">
               {sizes[3]}
             </span>
             <input
-              type='number'
-              className='text-gray-700 font-bold  border-gray-300 rounded-md py-2 text-center sm:text-sm placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-500 focus:border-gray-500 bg-transparent 2xl:text-2xl'
+              type="number"
+              className="text-gray-700 font-bold  border-gray-300 rounded-md py-2 text-center sm:text-sm placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-500 focus:border-gray-500 bg-transparent 2xl:text-2xl"
               placeholder={placeholders[1]}
               value={powerful}
               onChange={({ target: { value } }) => setPowerful(value)}
             />
           </div>
           <select
-            className='font-extrabold text-xl bg-transparent opacity-60 2xl:text-3xl my-2'
+            className="font-extrabold text-xl bg-transparent opacity-60 2xl:text-3xl my-2"
             value={selectedScroll}
             onChange={({ target: { value } }) => setSelectedScroll(value)}
-            defaultValue='Tipo do pergaminho'
+            defaultValue="Tipo do pergaminho"
           >
             <option
               disabled
-              className='text-base font-black'
-              value='Tipo do pergaminho'
+              className="text-base font-black"
+              value="Tipo do pergaminho"
             >
               {scrolls[0]}
             </option>
-            <option className='text-base' value='str'>
+            <option className="text-base" value="str">
               {scrolls[1]}
             </option>
-            <option className='text-base' value='int'>
+            <option className="text-base" value="int">
               {scrolls[2]}
             </option>
-            <option className='text-base' value='wis'>
+            <option className="text-base" value="wis">
               {scrolls[3]}
             </option>
-            <option className='text-base' value='agi'>
+            <option className="text-base" value="agi">
               {scrolls[4]}
             </option>
-            <option className='text-base' value='cha'>
+            <option className="text-base" value="cha">
               {scrolls[5]}
             </option>
-            <option className='text-base' value='vit'>
+            <option className="text-base" value="vit">
               {scrolls[6]}
             </option>
           </select>
@@ -160,16 +160,16 @@ const FormDoploon = ({
           </button>
         </form>
       ) : (
-        <div className='flex flex-col items-center p-10 md:p-16 xl:p-20 2xl:p-32'>
+        <div className="flex flex-col items-center p-10 md:p-16 xl:p-20 2xl:p-32">
           <SpinnerInfinity
             enabled={true}
             color={"#322c22"}
             secondaryColor={"#B8C944"}
-            className='mt-4'
+            className="mt-4"
             size={80}
           />
           <p
-            className='mt-6 text-xl font-extrabold'
+            className="mt-6 text-xl font-extrabold"
             style={{ color: "#322c22" }}
           >
             {spinner[0]}
